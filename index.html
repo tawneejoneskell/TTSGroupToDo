@@ -6,14 +6,16 @@
     </head>
     <body>
         <ul ID="toDoList">
-            <li><input type="radio" ID="item1Radio"><input type="checkbox" ID="item1CheckBox">Item 1</li>
-            <li><input type="radio" ID="item2Radio"><input type="checkbox" ID="item2CheckBox"> Item 2</li>
-            <li> <input type="radio" ID="item3Radio"><input type="checkbox" ID="item3CheckBox">Item 3</li>
-            <li><input type="radio" ID="item4Radio"><input type="checkbox" ID="item4CheckBox"> Item 4</li>
+            <h6> To remove item from 'To do list, click the checkbox next to the item(s) and click 'Remove'</h6>
+            <li><input type="checkbox" class="itemRemove" ID="removeTest0">Item 1</li>
+            <li><input type="checkbox" class="itemRemove" ID="removeTest1"> Item 2</li>
+            <li><input type="checkbox" class="itemRemove" ID="removeTest2">Item 3</li>
+            <li><input type="checkbox" class="itemRemove" ID="removeTest3"> Item 4</li>
         </ul>
         <form>
         <input type="text" ID="addItem" name="addItem">
-       <input type="button" onClick="addToList()" ID="submitButton" name="submitButton" value="submit">
+       <input type="button" onClick="addToList()" ID="submitButton" name="submitButton" value="add">
+       <input type="button" onClick="removeFromList()" ID="removeButton" name="removeButton" value="remove">
        </form>
        <script src="./index.js">
 
